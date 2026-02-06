@@ -80,9 +80,9 @@ $$\begin{pmatrix} + & - & + \\ - & + & - \\ + & - & + \end{pmatrix}$$
 
 ## Practice Problem: Diagonalization
 
-<MathBlock>
+$$
 \text{Diagonalize } A = \begin{pmatrix} 4 & 1 \\ 2 & 3 \end{pmatrix}
-</MathBlock>
+$$
 
 <Collapse title="Step-by-step solution">
 
@@ -109,23 +109,21 @@ $$P = \begin{pmatrix} 1 & 1 \\ 1 & -2 \end{pmatrix}, \quad D = \begin{pmatrix} 5
 
 ## Verify With Code
 
-<CodePlayground language="python">
-import numpy as np
+<CodePlayground language="python" code={`import numpy as np
 
 A = np.array([[4, 1], [2, 3]])
 
 # Find eigenvalues and eigenvectors
 eigenvalues, eigenvectors = np.linalg.eig(A)
 print(f"Eigenvalues: {eigenvalues}")
-print(f"Eigenvectors:\n{eigenvectors}")
+print(f"Eigenvectors:\\n{eigenvectors}")
 
 # Verify diagonalization: A = P D P^(-1)
 P = eigenvectors
 D = np.diag(eigenvalues)
 A_reconstructed = P @ D @ np.linalg.inv(P)
-print(f"\nReconstructed A:\n{np.round(A_reconstructed, 2)}")
-print(f"Match: {np.allclose(A, A_reconstructed)}")
-</CodePlayground>
+print(f"\\nReconstructed A:\\n{np.round(A_reconstructed, 2)}")
+print(f"Match: {np.allclose(A, A_reconstructed)}")`} />
 
 ## Final Tips
 
