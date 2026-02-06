@@ -1,0 +1,79 @@
+{
+  "slug": "ivan-petrov",
+  "name": {
+    "ru": "Иван Петров",
+    "en": "Ivan Petrov",
+    "cz": "Ivan Petrov"
+  },
+  "description": {
+    "ru": "Профессор математики, 15 лет преподавательского опыта. Специалист по линейной алгебре и дискретной математике.",
+    "en": "Professor of mathematics with 15 years of teaching experience. Specialist in linear algebra and discrete mathematics.",
+    "cz": "Profesor matematiky s 15letou pedagogickou praxí. Specialista na lineární algebru a diskrétní matematiku."
+  },
+  "photo": "assets/photo.jpg",
+  "subjects": ["linear-algebra", "discrete-mathematics"],
+  "ratings": {
+    "overall": 4.5,
+    "clarity": 4.8,
+    "difficulty": 3.2,
+    "usefulness": 4.6,
+    "count": 127
+  },
+  "keywords": {
+    "ru": ["петров", "математика", "линейная алгебра", "профессор"],
+    "en": ["petrov", "mathematics", "linear algebra", "professor"],
+    "cz": ["petrov", "matematika", "lineární algebra", "profesor"]
+  },
+  "contacts": {
+    "email": "petrov@university.edu",
+    "office": {
+      "ru": "Корпус А, к. 305",
+      "en": "Building A, Room 305",
+      "cz": "Budova A, č. 305"
+    },
+    "website": "https://petrov.math.university.edu"
+  },
+  "reviews": [
+    {
+      "text": {
+        "ru": "Отлично объясняет сложные темы. Геометрический подход к линейной алгебре помог всё понять.",
+        "en": "Explains complex topics with remarkable clarity. His geometric approach to linear algebra made everything click.",
+        "cz": "Skvěle vysvětluje složitá témata. Jeho geometrický přístup k lineární algebře mi pomohl vše pochopit."
+      },
+      "rating": 5,
+      "date": "2025-06-15",
+      "anonymous": true
+    },
+    {
+      "text": {
+        "ru": "Хороший лектор. Иногда темп быстрый для новичков, но консультации очень помогают.",
+        "en": "Good lecturer overall. Sometimes the pace is fast for beginners, but office hours are very helpful.",
+        "cz": "Dobrý lektor. Někdy je tempo rychlé pro začátečníky, ale konzultace jsou velmi užitečné."
+      },
+      "rating": 4,
+      "date": "2025-05-20",
+      "anonymous": true
+    },
+    {
+      "text": {
+        "ru": "Лучший математик на факультете. Учит понимать ПОЧЕМУ, а не просто считать.",
+        "en": "Best math professor in the department. Teaches you to understand WHY, not just compute.",
+        "cz": "Nejlepší matematik na fakultě. Učí pochopit PROČ, nejen počítat."
+      },
+      "rating": 5,
+      "date": "2025-04-10",
+      "anonymous": true
+    }
+  ],
+  "sections": [
+    {
+      "slug": "guides",
+      "name": {
+        "ru": "Руководства",
+        "en": "Guides",
+        "cz": "Průvodce"
+      },
+      "articles": ["teaching-philosophy", "study-guide"]
+    }
+  ]
+}

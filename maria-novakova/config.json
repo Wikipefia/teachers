@@ -1,0 +1,69 @@
+{
+  "slug": "maria-novakova",
+  "name": {
+    "ru": "Мария Новакова",
+    "en": "Maria Novakova",
+    "cz": "Marie Nováková"
+  },
+  "description": {
+    "ru": "Доцент информатики, специалист по алгоритмам и вычислительной сложности. Пионер практико-ориентированного подхода к преподаванию программирования.",
+    "en": "Associate professor of computer science, algorithms specialist. Pioneer of practical-first programming curriculum.",
+    "cz": "Docentka informatiky, specialistka na algoritmy a výpočetní složitost. Průkopnice praktického přístupu k výuce programování."
+  },
+  "photo": "assets/photo.jpg",
+  "subjects": ["programming-fundamentals", "discrete-mathematics"],
+  "ratings": {
+    "overall": 4.7,
+    "clarity": 4.9,
+    "difficulty": 2.8,
+    "usefulness": 4.8,
+    "count": 203
+  },
+  "keywords": {
+    "ru": ["новакова", "информатика", "программирование", "алгоритмы"],
+    "en": ["novakova", "computer science", "programming", "algorithms"],
+    "cz": ["nováková", "informatika", "programování", "algoritmy"]
+  },
+  "contacts": {
+    "email": "novakova@university.edu",
+    "office": {
+      "ru": "Корпус C, к. 412",
+      "en": "Building C, Room 412",
+      "cz": "Budova C, č. 412"
+    },
+    "website": "https://novakova.cs.university.edu"
+  },
+  "reviews": [
+    {
+      "text": {
+        "ru": "Лучший преподаватель информатики в университете. Её задания на программирование идеально спроектированы.",
+        "en": "The best CS professor at this university. Her coding exercises are incredibly well-designed.",
+        "cz": "Nejlepší profesorka informatiky na univerzitě. Její programovací cvičení jsou skvěle navržená."
+      },
+      "rating": 5,
+      "date": "2025-07-01",
+      "anonymous": true
+    },
+    {
+      "text": {
+        "ru": "Понятные объяснения, отличные слайды, и ей правда важно, понимают ли студенты.",
+        "en": "Clear explanations, great slides, and she actually cares if students understand.",
+        "cz": "Jasné vysvětlení, skvělé slajdy, a opravdu jí záleží, zda studenti rozumí."
+      },
+      "rating": 5,
+      "date": "2025-05-15",
+      "anonymous": true
+    }
+  ],
+  "sections": [
+    {
+      "slug": "exam-prep",
+      "name": {
+        "ru": "Подготовка к экзаменам",
+        "en": "Exam Preparation",
+        "cz": "Příprava na zkoušky"
+      },
+      "articles": ["exam-tips"]
+    }
+  ]
+}

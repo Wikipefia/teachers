@@ -1,0 +1,130 @@
+---
+title:
+  ru: "Как сдать экзамен по программированию"
+  en: "How to Ace Programming Exams"
+  cz: "Jak zvládnout zkoušku z programování"
+slug: "exam-tips"
+author: "maria-novakova"
+keywords:
+  ru: ["экзамен", "подготовка", "программирование", "советы"]
+  en: ["exam", "preparation", "programming", "tips"]
+  cz: ["zkouška", "příprava", "programování", "tipy"]
+created: "2024-10-15"
+updated: "2025-09-01"
+difficulty: "beginner"
+estimatedReadTime: 10
+tutors:
+  - "maria-novakova"
+---
+
+# How to Ace Programming Exams
+
+Our programming exams test understanding, not memorization. Here's how to prepare effectively.
+
+## Exam Format
+
+<Tabs>
+<Tab label="Written Exam">
+| Section | Weight | Description |
+|---|---|---|
+| Multiple Choice | 20% | Conceptual questions |
+| Code Reading | 30% | Trace execution, find bugs |
+| Code Writing | 50% | Implement algorithms from scratch |
+
+**Duration**: 2 hours. **Allowed**: No materials.
+</Tab>
+
+<Tab label="Practical Exam">
+| Task | Weight | Description |
+|---|---|---|
+| Algorithm Implementation | 40% | Implement a given algorithm correctly |
+| Problem Solving | 40% | Design a solution for a new problem |
+| Code Quality | 20% | Clean code, good naming, edge cases |
+
+**Duration**: 3 hours. **Allowed**: IDE, standard library docs.
+</Tab>
+</Tabs>
+
+## The Code Writing Strategy
+
+When facing a coding problem, resist the urge to start writing immediately.
+
+<Callout type="warning">
+**The #1 exam mistake**: Students start coding before understanding the problem. Spend the first 2–3 minutes reading, re-reading, and identifying edge cases.
+</Callout>
+
+### Step-by-Step Approach
+
+1. **Read** the problem twice
+2. **Identify** input/output types and constraints
+3. **Think** of 2–3 small test cases (including edge cases)
+4. **Plan** your algorithm in plain English
+5. **Code** the solution
+6. **Trace** through your test cases mentally
+
+### Example: Two Sum
+
+<CodePlayground language="python">
+def two_sum(nums: list[int], target: int) -> list[int]:
+    """Find indices of two numbers that add to target.
+
+    Strategy: Use a hash map for O(n) lookup.
+    """
+    seen = {}  # value -> index
+
+    for i, num in enumerate(nums):
+        complement = target - num
+        if complement in seen:
+            return [seen[complement], i]
+        seen[num] = i
+
+    return []  # no solution found
+
+# Test cases
+print(two_sum([2, 7, 11, 15], 9))   # [0, 1]
+print(two_sum([3, 2, 4], 6))         # [1, 2]
+print(two_sum([3, 3], 6))            # [0, 1]
+print(two_sum([], 5))                # [] (edge: empty)
+print(two_sum([1], 2))               # [] (edge: single element)
+</CodePlayground>
+
+## Edge Cases Checklist
+
+Always mentally test with these:
+
+<Quiz>
+<Question text="Which edge cases should you ALWAYS check for list/array problems?">
+  <Option value="a" correct>Empty list, single element, all same values</Option>
+  <Option value="b">Only even numbers</Option>
+  <Option value="c">Lists with exactly 100 elements</Option>
+  <Option value="d">Lists sorted in reverse</Option>
+</Question>
+
+<Question text="What's the time complexity of the hash map two-sum solution?">
+  <Option value="n2">O(n²)</Option>
+  <Option value="n" correct>O(n)</Option>
+  <Option value="logn">O(log n)</Option>
+  <Option value="1">O(1)</Option>
+</Question>
+</Quiz>
+
+## Common Pitfalls
+
+<Callout type="error">
+**Off-by-one errors**: When looping `range(n)` vs `range(n+1)` vs `range(1, n)`. Always double-check your loop bounds with a small example.
+</Callout>
+
+<Callout type="error">
+**Mutating while iterating**: Never modify a list while iterating over it. Create a new list or collect indices first.
+</Callout>
+
+## Practice Resources
+
+1. Past exam papers (available on the course page)
+2. LeetCode Easy and Medium problems
+3. Exercism.io for language-specific drills
+4. visualgo.net for algorithm visualization
+
+<Callout type="info">
+**My recommendation**: Solve 3 problems per day for 2 weeks before the exam. Quality over quantity — understand each solution deeply.
+</Callout>
